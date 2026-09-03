@@ -24,4 +24,9 @@ resource "aws_instance" "web_server" {
     ManagedBy   = "terraform"
     Owner       = "devops-team"
   }
+  tags = {
+  ManagedBy = "terraform"
+  Owner     = "devops-team"
+  Purpose   = "hands-on-practice"
+}
 }
